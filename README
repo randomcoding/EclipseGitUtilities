@@ -1,7 +1,16 @@
 This is a small project for use with EGit (eclipse.org/egit). Its purpose is to provide some of the 
 git functionality that is currently not implemented in EGit/JGit.
 
-It requires that you have a native version of git installed.
+It requires the following:
+1.  git installed.
+2. Setup a Run/Debug variable GIT_EXEC:
+ 1. Open Window -> Preferences ->Run/Debug -> String Substitution
+ 2. Select New...
+ 3. Enter GIT_EXEC in the Name text box
+ 4. Browse to your git executable for the Value box (mine is /usr/bin/git)
+ 5. Enter a description, if you like, and then Ok everything.
+ 
+This requirement exists so as to allow git to reside anywhere on your system, with any name and not be tied into the project's configuration.
 
 Currently provided operations are:
 Stash: git stash
