@@ -1,0 +1,9 @@
+This is a small project for use with EGit (eclipse.org/egit). Its purpose is to provide some of the 
+git functionality that is currently not implemented in EGit/JGit.
+
+It requires that you have a native version of git installed.
+
+Currently provided operations are:
+Stash: git stash
+Unstash: git stash apply
+Clear Stash: git stash clear
